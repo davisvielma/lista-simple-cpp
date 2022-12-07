@@ -2,9 +2,11 @@
 #define NODO_H
 
 class Nodo {
-	public:
-		Nodo();
-		~Nodo();
+	private:
+		int dato;
+		Nodo *siguiente;
+
+	friend class ListaSimple;
 };
 
 #endif //NODO_H
